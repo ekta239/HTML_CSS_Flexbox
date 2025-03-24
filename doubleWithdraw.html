@@ -1,13 +1,16 @@
 <!doctype html>
 <title>Example</title>
 <style>
+  * {
+   box-sizing: border-box;
+  }
   .cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: stretch;
   }
   .card {
-    flex: 0 0 200px;
+    width: 200px;
     margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
@@ -25,6 +28,9 @@
     padding: 10px;
     width: 100%;
     }
+  .card:nth-child(1) {
+    width: 420px;
+  }
 </style>
 
 <main class="cards">
@@ -69,8 +75,8 @@
     </div>
   </article>
   <article class="card">
-        <img src="sample.jpg" alt="Sample photo">
-        <div class="text">
+    <img src="sample.jpg" alt="Sample photo">
+    <div class="text">
       <h3>Sanity check</h3>
       <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
       <button>Stop here</button>
